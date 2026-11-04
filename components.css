@@ -1,0 +1,157 @@
+/* Hero 主視覺區塊 */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') center/cover;
+  color: white;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* 卡片網格與卡片元件 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-body h3 {
+  margin-bottom: 0.5rem;
+  color: #1a252f;
+}
+
+.card-body p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* 分頁切換隱藏/顯示 */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* 🎬 故事腳本特別樣式 */
+.script-box {
+  background: #ffffff;
+  border-left: 5px solid var(--primary-color);
+  padding: 1.8rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  margin-top: 1.2rem;
+  line-height: 1.8;
+}
+
+.script-box p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.script-box p:last-child {
+  margin-bottom: 0;
+}
+
+.script-box strong {
+  color: var(--primary-color);
+}
+
+/* 📊 表格與感知定位視覺化 */
+.positioning-table-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.positioning-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.positioning-table th, .positioning-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.positioning-table th {
+  background-color: #f8f9fa;
+  color: #1a252f;
+}
+
+.positioning-table .highlight-row {
+  background-color: #eaf4ff;
+  color: var(--primary-color);
+}
+
+/* 📈 數據視覺化卡片 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--primary-color);
+}
+
+.stat-num {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}

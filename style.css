@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #0073e6;
+  --accent-color: #ff6b6b;
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --sidebar-width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

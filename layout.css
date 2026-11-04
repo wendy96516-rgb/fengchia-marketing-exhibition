@@ -1,0 +1,65 @@
+/* 頂部導覽列 */
+.navbar {
+  background-color: #1a252f;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 主體布局：Grid System */
+.main-container {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: calc(100vh - 60px);
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav li {
+  margin-bottom: 1rem;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.content {
+  padding: 2rem;
+}
+
+/* RWD 手持裝置響應式設計 */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar nav li {
+    margin-bottom: 0;
+  }
+}
